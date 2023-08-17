@@ -1,0 +1,64 @@
+\section{Alekhine Chatard}
+
+The Alekhine-Chatard is reached after
+
+\newchessgame
+\noindent \mainline{1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e5 Nfd7 6. h4}
+
+\newchessgame[setfen=rnbqk2r/pppnbppp/4p3/3pP1B1/3P3P/2N5/PPP2PP1/R2QKBNR b KQkq - 0 6]
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+\noindent Here I think it is best to accept the gambit with \variation{6...Bxg5}. The variations may be engine generated, but I prefer black's position to white's.
+
+\noindent The main tabiya is the position on move 8, where white has several options
+
+\newchessgame[setfen=rnb1k2r/pppn1ppp/4p3/3pP1q1/3P4/2N5/PPP2PP1/R2QKBNR w KQkq - 0 8]
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+\subsection{8. Nh3 Classical}
+\newchessgame
+\noindent \mainline{1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e5 Nfd7 6. h4 Bxg5 7. hxg5 Qxg5 8. Nh3}
+
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+By playing Nh3 instead of Nf3, white can meet \variation{8...Qe7} with \variation{9. Qg4}. The gambit seems bleak for black, as white has a lot of play on the kingside. However, black has the absurd idea:
+
+\noindent \mainline{8...Qh4!}
+
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+Black provokes \variation{9. g3}, so that white does not have Qg3 in a critical line. I'll show you.
+
+\subsubsection{Qh4! Critical Line}
+\mainline{9. Nh3 Qe7 10. Qg4 g6 11. Ng5 h6 12. Bd3 Nc6 13. Nxf7}
+
+\newchessgame[setfen=r1b1k2r/pppnqN2/2n1p1pp/3pP3/3P2Q1/2NB2P1/PPP2P2/R3K2R b KQkq - 0 13]
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+\noindent Because black inserted g3, black has \variation{13...h5!} when white is denied Qg3. White's best is Qg5, but the most popular is Bxg6. \variation{14. Bxg6?} Of course black takes on g4 \variation{14...hxg4}
+
+\noindent The only move played for white on lichess is the horrible blunder: \variation{15. Rxh8??}
+
+\newchessgame[setfen=r1b1k2R/pppnqN2/2n1p1B1/3pP3/3P2p1/2N3P1/PPP2P2/R3K3 b Qq - 0 15]
+
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+Black wins, as he is up a queen. A sample line goes: \variation{15...Nf8 16. 0-0-0} (\variation{16. Nb5} allows Kd7 and Qb4+) 
+\variation{16...Kd7 17. Bh5} (the h5 bishop was attacked) \variation{17...Nd8 18. Nxd8  Kxd8 19. Bxg4 c5 20. f4 Bd7} and black plays Kc7 next and is easily winning.
+
+\noindent Better than \variation{15. Rxh8??} is \variation{15. Ng5+} which is still -1.7
+
+\newchessgame[setfen=r1b1k2r/pppnq3/2n1p1B1/3pP1N1/3P2p1/2N3P1/PPP2P2/R3K2R b KQkq - 1 15]
+
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+White forces Kf8, so that now on Rxh8+ black has to play Kg7 and can't block with Nf8.
+
+\variation{15...Kf8 16. Rxh8+ Kg7 17. Rh7+ Kxg6 18. Rxe7 Nxe7 19. Nxe6 c5}
+
+\newchessgame[setfen=r1b5/pp1nn3/4N1k1/2ppP3/3P2p1/2N3P1/PPP2P2/R3K3 w Q - 0 20]
+\chessboard[showmover=false,labelleft=false,labelright=false,labeltop=false,labelbottom=false]
+
+Black is better. If \variation{21. Nf4+}, black should try to take the e5 pawn with \variation{21...Kf5!}
+
+\subsection{8. Qd3 }
