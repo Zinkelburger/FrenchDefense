@@ -3,6 +3,20 @@
 \usepackage{xskak}
 \usepackage{hyperref}
 
+% Redefining the \paragraph command
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+% Redefining the \paragraph command
+\makeatletter
+\renewcommand\subparagraph{\@startsection{subparagraph}{4}{\z@}%
+                                    {3.25ex \@plus1ex \@minus.2ex}%
+                                    {-1em}%
+                                    {\normalfont\normalsize\bfseries}}
+
+\setcounter{tocdepth}{5}
 \begin{document}
 
 \section{Introduction}
@@ -17,6 +31,7 @@ force a very early repetition with Na4-\>Nc3.
 \input{exchangeFrench.tex}
 \input{burn.tex}
 \input{steinitz.tex}
+\input{milnerBarryGambit.tex}
 \input{advanceFrench.tex}
 
 \end{document}
